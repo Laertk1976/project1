@@ -1,0 +1,145 @@
+* {
+    background-color: rgb(185, 214, 205);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 4px 4px 4px rgb(0, 0, 0, 0.25);
+    ;
+}
+
+header {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.header {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+
+}
+
+.header img {
+    box-shadow: 4px 4px 4px rgb(0, 0, 0, 25%);
+    height: 300px;
+    width: 300px;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background: rgb(214, 214, 214);
+}
+
+.nav {
+
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+
+}
+
+.nav li {
+    padding: 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    /* background-color: #f9f9f9; */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding-left: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.img {
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.img div {
+    box-shadow: 4px 4px 4px rgb(0, 0, 0, 25%);
+}
+
+.img div:hover {
+    transform: scale(1.8);
+    transition: 0.8s ease;
+
+}
+
+.menu {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: center;
+    position: relative;
+}
+
+.menu img {
+    width: 250px;
+    height: 200px;
+}
+
+h2 {
+
+    margin: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 46px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid gray;
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.25);
+}
+
+.menu div img:hover {
+    /* transform: translate(50px, -40px);
+    transition: 0.5s;
+    opacity: 0.7s; */
+    transition: 0.7s;
+    transform: translateY(-8px);
+}
+
+@media screen and (max-width: 700px) {
+    h2 {
+        color: white;
+        font-size: 36px;
+
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .header img {
+        width: 200px;
+        height: 200px;
+    }
+    .img{
+        display: flex;
+        justify-content: space-around;
+    }
+    h1{
+        font-size: 26px;
+    }
+}
